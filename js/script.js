@@ -1,3 +1,5 @@
+
+
 //Brand animation
 var brand=document.querySelector(".navbar-brand");
 brand.addEventListener("mouseover",function(){
@@ -13,4 +15,23 @@ brand.addEventListener("mouseout",function(){
     intero.style.transition ="transform 400ms";
     brand.style.transform= "scale(1)";
     brand.style.transition=" transform 400ms";
-})
+});
+$(function(){
+    var scroll=$(document).scrollTop();
+    var navheight=$(".navbar").outerHeight();
+    $(window).scroll(function(){
+        var scrolled=$(document).scrollTop();
+        if(scrolled>navheight){
+            $('.navbar').addClass('animate');
+
+        }else{
+            $('.navbar').removeClass('animate');
+        }
+        if(scrolled>scroll){
+            $('.navbar').removeClass('sticky');
+        }else{
+            $('.navbar').addClass("sticky");
+        }
+        scroll=$(document).scrollTop();
+    });
+});
