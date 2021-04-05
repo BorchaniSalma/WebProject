@@ -23,11 +23,10 @@ body{
     font-weight: 2.5;
       
 }
-.navbar-brand:hover{
-    transform: scale(1.1);
-    transition: transform 400ms;
-    
+.interogation-mark{
+    display:inline-block;
 }
+
 .navbar-expand-lg .navbar-nav .nav-item,.navbar-expand-lg .navbar-nav .nav-link{
     color: #ccffbd!important;
     margin-left:1.3rem;
