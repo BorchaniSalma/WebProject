@@ -5,25 +5,42 @@ body{
 
 /* header styles */
 #header{
+    background-image: url("/ressources/images/Discover.jpg");
+    height :820px;
 }
-.background-image{
-    width:100%;
-    top:0;
-    z-index:-1;
+
+.header-content{
+    font-family: 'Merriweather', serif;
+    color : #6fe69e;
+    font-size: calc(100% + 1vw + 1vh);
+    padding-top : 20rem;
+    padding-left :5rem;
 }
+.author-name{
+    padding-top:1.5rem;
+    margin-left:80%;
+    left : 100%;
+}
+
 
 /* Navbar styling */
 .navbar{
     background-color:transparent;
-    position:fixed;
+    position :fixed;
     left:0;
     top:0;
-    transition:top .5s;
+    transition:top .5s, background-color 1.5s;
     box-sizing: border-box;
     width:100%;
     
 }
+
+.isVisible{
+    background-color:rgba(36,32,46,.6);
+}
+
 .navbar-brand {
+    margin-left: 3rem;
     font-family: 'Train One', cursive;
     color: #7eca9c!important;
     font-size :2.7rem;
@@ -53,10 +70,19 @@ body{
     margin-right:5rem;
 }
 .navbar.animate{
-    top:-90px;
+    top:-140px;
 
+}
+.navbar.ontop{
+    position:static !important;
+    top:0;
 }
 .navbar.sticky{
     top:0;
     z-index: 99;
+}
+
+/* features section */
+#features{
+    height: 10000px;
 }
