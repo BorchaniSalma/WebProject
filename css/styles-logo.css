@@ -1,0 +1,47 @@
+.wrapper{
+    
+}
+
+.logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 20rem;;
+  }
+  .personality{
+    position:relative;
+    height: auto;
+    width:fit-content;
+    margin: 0;
+  }
+  .p-1{
+    left: 46%;
+  }
+  .p-2{
+    left: 67%;
+    top:490px;
+  }
+  .p-3{
+    left: 62%;
+    top:310px;
+  }
+  .p-4{
+    left: 62%;
+    top:310px;
+  }
+  .p-5{
+    left: 46%;
+  }
+  .p-6{
+    left: 46%;
+  }
+  .p-7{
+    left: 46%;
+  }
+  .p-8{
+    left: 46%;
+  }
+  .p-9{
+    left: 46%;
+  }
