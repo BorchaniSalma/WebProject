@@ -4,7 +4,7 @@ body {
 
 /* header styles */
 #header {
-  background-image: url("/ressources/images/Discover.jpg");
+  background-image: url("https://borchanisalma.github.io/WebProject/ressources/images/Discover.jpg");
   height: 100vh;
 }
 
@@ -130,6 +130,7 @@ body {
 #features{
   background-color:#40394a;
   height: 100px;
+  position :relative;
 }
 
 
