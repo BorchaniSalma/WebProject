@@ -5,20 +5,23 @@ body {
 /* header styles */
 #header {
   background-image: url("/ressources/images/Discover.jpg");
-  height: 820px;
+  height: 100vh;
 }
 
 .header-content {
   font-family: "Merriweather", serif;
   color: #6fe69e;
   font-size: calc(100% + 1vw + 1vh);
+  letter-spacing: 1px;
   padding-top: 20rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .author-name {
+  position:relative;
   padding-top: 1.5rem;
-  margin-left: 80%;
-  left: 100%;
+  right:-25vw;
+  width:fit-content;
 }
 
 /* Navbar styling */
@@ -31,13 +34,26 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
+.fa-bars{
+  color :#7eca9c;
+}
+.navbar-toggler{
+  margin-left:auto;
+  margin-right:10vw;
+}
 
+@media only screen and (max-width:426px) {
+  .navbar-toggler{
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
 .isVisible {
   background-color: rgba(36, 32, 46, 0.6);
 }
 
 .navbar-brand {
-  margin-left: 3rem;
+  margin-left: 1.4rem;
   font-family: "Train One", cursive;
   color: #7eca9c !important;
   font-size: 2.7rem;
@@ -79,13 +95,12 @@ body {
 }
 
 /* features section */
-#features {
-  height: 10000px;
-}
 .about {
   position: relative;
   width: 100%;
-  display: flex;
+  height: 80vh;
+  background-color: #1c1427;
+ 
 }
 .about .contentBx {
   background-color: #1c1427;
@@ -94,68 +109,27 @@ body {
 }
 .heading {
   color: #ccffbd;
-  font-size: 30px;
+  font-size: calc(100% + 1vw + 1vh);
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5vh;
 }
 .text {
   color: #ccffbd;
-  font-size: 16px;
+  font-size: calc(15% + 1vw + 1vh);
   font-weight: 300;
   letter-spacing: 1px;
-}
-.PersonnalityLeft {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-.PersonnalityLeft .content {
-  background-color: #ccffbd;
-  padding: 100px;
-  width: 50%;
-  border-radius: 20px;
-}
-.PersonnalityLeft .heading {
-  color: #1c1427;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.PersonnalityLeft .text {
-  color: #1c1427;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-.PersonnalityRight .heading {
-  color: #1c1427;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.PersonnalityRight .text {
-  color: #1c1427;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-.PersonnalityRight {
-  position: relative;
-  width: 100%;
-  display: flex;
-  margin-left: 50%;
-}
-.PersonnalityRight .content {
-  background-color: #e4f1e0;
-  padding: 100px;
-  width: 50%;
-  border-radius: 20px;
+  margin : 0;  
 }
 .btn {
   border-color: black;
   background-color: #40394a;
   color: white;
 }
+
+#features{
+  background-color:#40394a;
+  height: 100px;
+}
+
+
