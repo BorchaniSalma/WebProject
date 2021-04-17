@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
     <link rel="stylesheet" href="css/StylesHey.css" />
+    <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 
     <!-- Title -->
     <title>HomePage</title>
   </head>
 
   <body>
+    <?php include_once 'fragments/navbar.php'  ?>
     <h1 class="animated">Hey Helper !</h1>
     <script>
       setTimeout(function () {
