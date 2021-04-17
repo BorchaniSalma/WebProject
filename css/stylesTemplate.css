@@ -84,7 +84,7 @@ body {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 ul {
@@ -102,7 +102,7 @@ ul {
 
 .animate {
   font-size: 50px;
-  margin: 100px 0 0;
+  margin: 120px 0 0;
   border-bottom: 2px solid #ccc;
 }
 
@@ -198,53 +198,11 @@ ul {
 }
 
 .firstImage {
-  height: 100vh;
-  margin: 0px 470px 200px;
-  padding: 0 0 200px;
+  height: 120vh;
+  margin: 0% 20%;
+  padding: 0 0 20%;
 }
-.animated {
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  width: 900px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-  font-size: 57px;
-  font-weight: bold;
-  color: #362824;
-  white-space: nowrap;
-  padding: 10px 150px;
-  border-bottom: 10px solid #362824;
-  box-sizing: border-box;
-  animation: animate 5s infinite linear;
-  overflow: hidden;
-}
-@keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  25% {
-    width: 650px;
-    height: 0;
-  }
-  40% {
-    width: 650px;
-    height: 130px;
-  }
-  60% {
-    width: 650px;
-    height: 130px;
-  }
-  75% {
-    width: 650px;
-    height: 0;
-  }
-  100% {
-    width: 0;
-    height: 0;
-  }
-}
+
 .container1 {
   position: absolute;
   width: 50%;
@@ -253,6 +211,7 @@ ul {
   top: 130%;
   background: #ccffbd;
   box-shadow: 30px 4px 4px rgb(122, 117, 117);
+  box-sizing: border-box;
 }
 .container1 p {
   font-family: "Oxygen", "sans serif";
@@ -270,6 +229,7 @@ ul {
   top: 200%;
   background: rgb(122, 117, 117);
   box-shadow: 25px 4px 4px #ccffbd;
+  box-sizing: border-box;
 }
 .container2 p {
   font-family: "Oxygen", "sans serif";
