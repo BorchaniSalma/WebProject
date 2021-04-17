@@ -24,6 +24,10 @@ body {
   width: fit-content;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19804dd66882bc7d9923f45a328b8daa950fdadc
 
 /* features section */
 .about {
@@ -61,4 +65,28 @@ body {
   background-color: #40394a;
   height: 100px;
   position: relative;
+}
+
+/* Testimonial part */
+#testimonials .carousel img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+}
+#testimonials .carousel .carousel-item{
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+
+}
+#testimonials .carousel .carousel-item .carousel-caption{
+  margin-bottom:120px;
+}
+#testimonials .carousel .carousel-item h5{
+  font-size: calc(120% + 1vw + 1vh);
+  color:#6fe69e;
+}
+#testimonials .carousel .carousel-item p{
+  font-size:calc(30% + 1vw + 1vh);
 }

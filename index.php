@@ -75,9 +75,42 @@ Each point represents one of the nine basic personality types.
 
     <!-- Testimonials section  -->
     <section id="testimonials">
-      <div class="caroussel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ressources/images/portrait-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Natalie Portman</h5>
+                        <p>My life is really changing after discovering who am I .</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class='frame'>
+                        <img src="ressources/images/portrait-5.jpg" class="d-block w-100" alt="...">
+                    </div>
 
-      </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Salma borcheni</h5>
+                        <p>I think i am in love with this website .</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ressources/images/portrait-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Slim Hammami</h5>
+                        <p>I love football .</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </section>
 
@@ -92,7 +125,7 @@ Each point represents one of the nine basic personality types.
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
+git
     <!-- MY js import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
