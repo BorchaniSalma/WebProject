@@ -8,17 +8,36 @@ $(document).ready(function(){
         mouseY = e.pageY;
         traX = ((4 * mouseX) / 570) + 40;
         traY = ((4 * mouseY) / 570) + 50;
-        console.log(traX);
         $(".title").css({"background-position": traX + "%" + traY + "%"});
     });
+
 });
 
-$(document).load($(window).bind("resize", checkPosition));
-function checkPosition() {
-    if (window.matchMedia('(max-width: 768px)').matches) {
-        $(".wrapper").addClass(".reset-this").removeClass(".wrapper");
-        console.log("hello");
-    } else {
-        //...
-    }
-}
+
+
+
+
+
+
+var logoPosition= document.querySelector('#mother') ;
+var container= document.createElement('div') ;
+container.style.backgroundColor='red';
+container.style.zIndex='10000';
+container.style.width='100px' ;
+container.style.height= '100px';
+var booksLogo=document.createElement('i');
+booksLogo.setAttribute("class","fas fa-book-open fa-5x" );
+booksLogo.setAttribute('color','green');
+container.appendChild(booksLogo);
+var before=document.querySelector('.fas fa-bars');
+logoPosition.insertBefore(container,before);
+
+
+
+
+
+
+
+
+
+

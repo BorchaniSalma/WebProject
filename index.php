@@ -37,13 +37,9 @@
     <!--style for navbar -->
       <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 
-      
-
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
             integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
             crossorigin="anonymous" />
-
-   
     <!-- Title -->
     <title>HomePage</title>
   </head>
