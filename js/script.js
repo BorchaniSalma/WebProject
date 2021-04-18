@@ -18,21 +18,19 @@ brand.addEventListener("mouseout", function () {
   brand.style.transition = " transform 400ms";
 });
 
-
 //navbar animation on scroll
 $(function () {
   var scroll = $(document).scrollTop();
   var navheight = $(".navbar").outerHeight();
   $(window).scroll(function () {
     var scrolled = $(document).scrollTop();
-    if(scrolled>1){
-        $(".navbar").addClass("isVisible");
-    }else{
-        $(".navbar").removeClass("isVisible");
+    if (scrolled > 1) {
+      $(".navbar").addClass("isVisible");
+    } else {
+      $(".navbar").removeClass("isVisible");
     }
     if (scrolled > navheight) {
       $(".navbar").addClass("animate");
-      
     } else {
       $(".navbar").removeClass("animate");
     }
@@ -43,8 +41,28 @@ $(function () {
       $(".navbar").addClass("sticky");
     }
 
-    
-
     scroll = $(document).scrollTop();
   });
 });
+
+$('.my-carousel').owlCarousel({
+  margin: 20,
+  loop: true,
+  autoplayTimeOut: 2000,
+  autoplayHoverPause: true,
+  responsive: {
+      0:{
+          items: 1,
+          nav: false
+      },
+      600:{
+          items: 2,
+          nav: false
+      },
+      1000:{
+          items: 3,
+          nav: false
+      }
+  }
+});
+

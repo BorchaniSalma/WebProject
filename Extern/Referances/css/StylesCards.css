@@ -20,7 +20,7 @@ h1 {
     max-width: 80rem;
 }
 
-.cols {
+.coils{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -31,13 +31,15 @@ h1 {
     justify-content: center;
 }
 
-.col {
+
+
+.col-me {
     width: calc(25% - 2rem);
     margin: 1rem;
     cursor: pointer;
 }
 
-.container {
+.container-me {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-perspective: 1000px;
@@ -88,8 +90,8 @@ h1 {
     backface-visibility: hidden;
     border-radius: 10px;
 }
-.container:hover .front,
-.container:hover .back {
+.container-me:hover .front,
+.container-me:hover .back {
     -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -121,28 +123,28 @@ h1 {
     z-index: 2;
 }
 
-.container .back {
+.container-me .back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-.container .front {
+.container-me .front {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-.container:hover .back {
+.container-me:hover .back {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-.container:hover .front {
+.container-me:hover .front {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
@@ -175,19 +177,19 @@ h1 {
 }
 
 @media screen and (max-width: 64rem) {
-    .col {
+    .col-me {
         width: calc(33.333333% - 2rem);
     }
 }
 
 @media screen and (max-width: 48rem) {
-    .col {
+    .col-me {
         width: calc(50% - 2rem);
     }
 }
 
 @media screen and (max-width: 32rem) {
-    .col {
+    .col-me {
         width: 100%;
         margin: 0 0 2rem 0;
     }
@@ -196,4 +198,8 @@ h1 {
 }
 body{
     background-color: #1c1427 !important ;
+}
+
+@media (max-width:768px){
+
 }

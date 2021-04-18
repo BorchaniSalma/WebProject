@@ -7,10 +7,11 @@
     transition: top 0.5s, background-color 1.5s;
     box-sizing: border-box;
     width: 100%;
-    z-index: 99;
+    z-index: 3000;
   }
   .fa-bars {
     color: #7eca9c;
+    height: 21px!important;
   }
   .navbar-toggler {
     margin-left: auto;
@@ -66,4 +67,11 @@
     top: 0;
     
   }
-  
+  .navbar .dropdown{
+    background-color:inherit;
+  }
+  .navbar.navbar-expand-lg{
+    height: 120px!important;
+    border:none!important;
+    box-shadow: none;
+}

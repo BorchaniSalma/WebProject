@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS import -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
 
-    <!-- Google font imports -->
+      <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+              crossorigin="anonymous"
+      />
+
+      <!-- Google font imports -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
@@ -32,9 +33,17 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
     <!--style for navbar -->
       <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 
+      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+            integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+            crossorigin="anonymous" />
+
+   
     <!-- Title -->
     <title>HomePage</title>
   </head>
@@ -71,47 +80,11 @@ Each point represents one of the nine basic personality types.
       </div>
       
     </section>
-    <section id="features"></section>
 
     <!-- Testimonials section  -->
     <section id="testimonials">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="ressources/images/portrait-1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Natalie Portman</h5>
-                        <p>My life is really changing after discovering who am I .</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class='frame'>
-                        <img src="ressources/images/portrait-5.jpg" class="d-block w-100" alt="...">
-                    </div>
-
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Salma borcheni</h5>
-                        <p>I think i am in love with this website .</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="ressources/images/portrait-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Slim Hammami</h5>
-                        <p>I love football .</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
+    <?php include_once 'carousel.php'  ?>
+      
     </section>
 
     <!-- Pricing section  -->
@@ -127,6 +100,12 @@ Each point represents one of the nine basic personality types.
     ></script>
     <!-- MY js import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="js/script.js"></script>
     
   </body>
