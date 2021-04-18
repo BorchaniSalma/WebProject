@@ -12,3 +12,13 @@ $(document).ready(function(){
         $(".title").css({"background-position": traX + "%" + traY + "%"});
     });
 });
+
+$(document).load($(window).bind("resize", checkPosition));
+function checkPosition() {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $(".wrapper").addClass(".reset-this").removeClass(".wrapper");
+        console.log("hello");
+    } else {
+        //...
+    }
+}

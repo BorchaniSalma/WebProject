@@ -20,12 +20,16 @@
   <title>Personality test</title>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+    link
   <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 </head>
 
 <body>
   <?php include_once 'fragments/navbar.php'  ?>
+    <div class="container persotest">
+        <h2 class="title">Personality test</h2>
+
+    </div>
 </body>
 <script src="js/script.js"></script>
 
