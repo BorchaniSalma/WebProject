@@ -185,32 +185,32 @@ Acknowledging and work through negative emotions, rather than avoiding them
               <div class="row">
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic01.jpg"
+                    ><img src="ressources/images/portrait-1.jpg"
                   /></a>
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic02.jpg" alt=""
+                    ><img src="ressources/images/portrait-2.jpg" alt=""
                   /></a>
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic03.jpg" alt=""
+                    ><img src="ressources/images/portrait-3.jpg" alt=""
                   /></a>
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic04.jpg" alt=""
+                    ><img src="ressources/images/portrait-1.jpg" alt=""
                   /></a>
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic05.jpg" alt=""
+                    ><img src="ressources/images/portrait-1.jpg" alt=""
                   /></a>
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic02.jpg" alt=""
+                    ><img src="ressources/images/portrait-5.jpg" alt=""
                   /></a>
                 </div>
               </div>
@@ -241,7 +241,7 @@ Acknowledging and work through negative emotions, rather than avoiding them
       <div class="content dark style3">
         <div class="container">
           <span class="image featured"
-            ><img src="ressources/images/Discover.jpg" alt=""
+            ><img src="ressources/images/portrait-3.jpg" alt=""
           /></span>
           <div class="row">
             <div class="col-4 col-12-narrow">

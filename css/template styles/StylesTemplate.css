@@ -1451,15 +1451,15 @@ article:last-child {
   border: 0;
 }
 
-.image:after {
+/*.image:after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("Extern/images/overlay.png");
-}
+  /*background: url("Extern/images/overlay.png");
+}*/
 
 .image img {
   display: block;
