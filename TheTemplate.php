@@ -36,14 +36,20 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="fragments/css/navbarStyling.css" />
-    <link rel="stylesheet" href="css/template styles/StylesHey.css" />
+    <link rel="stylesheet" href="css/template styles/StylesTemplate.css" />
     <link rel="stylesheet" href="Extern/assets/css/main.css" />
   </head>
   <body class="is-preload">
-    <!-- Header section  -->
-    <section id="header">
+    <!-- Header section --> 
+    <section id="head" class="dark">
       <!-- nav bar section -->
       <?php include_once 'fragments/navbar.php'  ?>
+				<header>
+					<h1>Type two</h1>
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">Discover</a>
+				</footer>
     </section>
     <!-- First -->
     <section id="first" class="main">
@@ -204,7 +210,7 @@ Acknowledging and work through negative emotions, rather than avoiding them
                 </div>
                 <div class="col-6">
                   <a href="#" class="image fit"
-                    ><img src="Extern/images/pic06.jpg" alt=""
+                    ><img src="Extern/images/pic02.jpg" alt=""
                   /></a>
                 </div>
               </div>
@@ -235,7 +241,7 @@ Acknowledging and work through negative emotions, rather than avoiding them
       <div class="content dark style3">
         <div class="container">
           <span class="image featured"
-            ><img src="Extern/images/pic07.jpg" alt=""
+            ><img src="ressources/images/Discover.jpg" alt=""
           /></span>
           <div class="row">
             <div class="col-4 col-12-narrow">
