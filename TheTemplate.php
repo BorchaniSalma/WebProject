@@ -35,9 +35,11 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="fragments/css/navbarStyling.css" />
-    <link rel="stylesheet" href="css/template styles/StylesTemplate.css" />
-    <link rel="stylesheet" href="Extern/assets/css/main.css" />
+
+      <link rel="stylesheet" href="css/template styles/StylesTemplate.css" />
+      <link rel="stylesheet" href="Extern/assets/css/main.css" />
+      <link rel="stylesheet" href="fragments/css/navbarStyling.css" />
+
   </head>
   <body class="is-preload">
     <!-- Header section --> 
@@ -300,57 +302,24 @@ Acknowledging and work through negative emotions, rather than avoiding them
       </div>
     </section>
     <!-- Fourth -->
-    <section id="fourth" class="main">
-      <header>
-        <div class="container">
-          <h2>
-			Your Feedback is Important to Us
-			</h2>
-          <p>
-            We constantly seek feedback to improve and evolve our website.
-			 To help us achieve this, please send us a message and give us your comments.
-          </p>
-        </div>
-      </header>
-      <div class="content style4 featured">
-        <div class="container medium">
-          <form method="post" action="#">
-            <div class="row gtr-50">
-              <div class="col-6 col-12-mobile">
-                <input type="text" placeholder="Name" />
-              </div>
-              <div class="col-6 col-12-mobile">
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="col-12">
-                <textarea name="message" placeholder="Message"></textarea>
-              </div>
-              <div class="col-12">
-                <ul class="actions special">
-                  <li>
-                    <input type="submit" class="button" value="Send Message" />
-                  </li>
-                  <li>
-                    <input type="reset" class="button alt" value="Clear Form" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+    <?php include_once 'form.php'  ?>
 	<!-- Footer section  -->
 	<?php include_once 'fragments/footer.php'  ?>
 
     <!-- Scripts -->
+
     <script src="Extern/assets/js/jquery.min.js"></script>
     <script src="Extern/assets/js/jquery.scrolly.min.js"></script>
     <script src="Extern/assets/js/browser.min.js"></script>
     <script src="Extern/assets/js/breakpoints.min.js"></script>
     <script src="Extern/assets/js/util.js"></script>
     <script src="Extern/assets/js/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"
+    ></script>
   </body>
 </html>

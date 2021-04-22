@@ -71,7 +71,10 @@
     background-color:inherit;
   }
   .navbar.navbar-expand-lg{
-    height: 120px!important;
+
     border:none!important;
     box-shadow: none;
 }
+  .dark a{
+    border-bottom-color: transparent!important;
+  }

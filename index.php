@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+
     <!-- Bootstrap CSS import -->
 
       <link
@@ -37,9 +39,12 @@
     <!--style for navbar -->
       <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-            integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
-            crossorigin="anonymous" />
+
+
+
+
+
+   
     <!-- Title -->
     <title>HomePage</title>
   </head>
@@ -80,11 +85,13 @@ Each point represents one of the nine basic personality types.
     <!-- Testimonials section  -->
     <section id="testimonials">
     <?php include_once 'carousel.php'  ?>
-      
+
     </section>
 
+<section class="symbole">
+    <?php include_once 'symbole.php'  ?>
+</section>
     <!-- Pricing section  -->
-    <section id="pricing"></section>
 
     <!-- includingFooter section  -->
     <?php include_once 'fragments/footer.php'  ?>
@@ -102,6 +109,9 @@ Each point represents one of the nine basic personality types.
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
+
     <script src="js/script.js"></script>
     
   </body>

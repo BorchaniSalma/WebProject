@@ -61,3 +61,7 @@ body {
   height: 100px;
   position: relative;
 }
+
+#symbole{
+  background-image: url("https://borchanisalma.github.io/WebProject/ressources/images/Discover.jpg");
+}

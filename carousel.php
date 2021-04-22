@@ -1,6 +1,6 @@
 <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
+            <h2 class="title">Testimonials</h2>
             <div class="my-carousel owl-carousel">
                 <div class="my-card">
                     <div class="my-box">
@@ -71,11 +71,13 @@ html{
 .teams{
     font-family: 'Poppins', sans-serif;
 }
+
+
 section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -85,29 +87,19 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 250px;
     height: 3px;
-    background: #111;
+    background-color:yellow;
     transform: translateX(-50%);
 }
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
+
 
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
+
+
 .teams .my-carousel .my-card{
-    background: #222;
+    background: #1c1427;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -116,9 +108,10 @@ section .title::after{
 }
 .teams .my-carousel{
     margin:50px 0;
+
 }
 .teams .my-carousel .my-card:hover{
-    background: crimson;
+    background: yellow;
 }
 .teams .my-carousel .my-card .my-box{
     display: flex;
@@ -134,17 +127,18 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+
 }
 .teams .my-carousel .my-card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #7eca9c;
     transition: all 0.3s ease;
 }
 .teams .my-carousel .my-card:hover img{
-    border-color: #fff;
+    border-color: #40394a;
 }
 .owl-dots{
     text-align: center;
@@ -156,8 +150,9 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #7eca9c!important;
     transition: all 0.3s ease;
+
 }
 .owl-dot.active{
     width: 35px;
@@ -165,6 +160,34 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #7eca9c!important;
+}
+#testimonials{
+    background-color: #40394a;
+    height: 90vh;
+
+}
+#testimonials .teams .max-width .title{
+    padding-top:50px!important;
+    color:#ccffbd;
+
+
+}
+#testimonials p{
+    color:#ffff;
+    transition:color 0.3s ease;
+}
+#testimonials .teams .my-carousel .my-card:hover p{
+
+    color:#1c1427;
+
+}
+#testimonials .teams .my-carousel .my-card:hover .text{
+    transition:color 0.3s ease;
+}
+#testimonials .teams .my-carousel .my-card:hover .text{
+
+    color:mediumseagreen;
+
 }
         </style>
