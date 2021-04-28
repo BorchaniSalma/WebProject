@@ -44,7 +44,7 @@ $(function () {
     scroll = $(document).scrollTop();
   });
 });
-
+//carousel animation
 $('.my-carousel').owlCarousel({
   margin: 20,
   loop: true,
@@ -65,4 +65,4 @@ $('.my-carousel').owlCarousel({
       }
   }
 });
-
+//symbole animation

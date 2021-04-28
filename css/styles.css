@@ -1,5 +1,6 @@
 /* General styles */
 body {
+  
 }
 
 /* header styles */
@@ -62,6 +63,43 @@ body {
   position: relative;
 }
 
-#symbole{
-  background-image: url("https://borchanisalma.github.io/WebProject/ressources/images/Discover.jpg");
+/* Symbole styling */
+
+.enneargram{
+  margin-top: 10px;
+  position:relative;
+  left:15px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+@media(max-width:1123px){
+  .enneargram{
+
+      height: 75vh;
+
+  }
+}
+@media(max-width:800px){
+  .enneargram{
+
+      height: 60vh;
+
+  }
+}
+@media(max-width:590px){
+  .enneargram{
+
+      height: 50vh;
+
+  }
+}
+@media(max-width:430px){
+  .enneargram{
+
+      height: 40vh;
+
+  }
 }
