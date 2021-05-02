@@ -20,17 +20,70 @@
   <title>Personality test</title>
 
   <!-- Styles -->
-    link
+    <link rel="stylesheet" href="css/test.css">
   <link rel="stylesheet" href="fragments/css/navbarStyling.css">
 </head>
 
 <body>
   <?php include_once 'fragments/navbar.php'  ?>
-    <div class="container persotest">
-        <h2 class="title">Personality test</h2>
 
-    </div>
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Quiz</span></div>
+      <div class="info-list">
+          <div class="info">1. This test may take some time let's say <span>30 minutes</span></div>
+          <div class="info">2. Answer intuitively don't hesitate.</div>
+          <div class="info">3. When answering a question it shouldn't take you more than <span>10 seconds</span> .</div>
+          <div class="info">4. This test will reveal your true self and make you understand yourself more.</div>
+          <div class="info">5. Enjoy yourself.</div>
+      </div>
+      <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+          <button class="restart">Continue</button>
+      </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+      <header>
+          <div class="title">Awesome Quiz Application</div>
+          <div class="time_line"></div>
+      </header>
+      <section>
+          <div class="que_text">
+              <!-- Here I've inserted question from JavaScript -->
+          </div>
+          <div class="option_list">
+              <!-- Here I've inserted options from JavaScript -->
+          </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+          <div class="total_que">
+              <!-- Here I've inserted Question Count Number from JavaScript -->
+          </div>
+          <button class="next_btn">Next Que</button>
+      </footer>
+  </div>
+
+
+  <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+  <!-- <script src="js/questions.js"></script> -->
+
+  <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+  <!-- <script src="js/script.js"></script> -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"
+></script>
+<script src="js/text.js"></script>
 <script src="js/script.js"></script>
+
 
 </html>

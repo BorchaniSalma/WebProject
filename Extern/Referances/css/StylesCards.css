@@ -16,8 +16,9 @@ h1 {
 
 .wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
     max-width: 80rem;
+
 }
 
 .coils{
@@ -29,6 +30,7 @@ h1 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
 }
 
 
