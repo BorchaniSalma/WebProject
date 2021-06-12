@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block meta %}
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+{% endblock %}
+
+{% block title %}
+        <title>Personality test</title>
+{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset("css/test/styles.css") }}">
+
+{% endblock %}
+
+{% block body %}
+
+{% block navbar %}
+
+    {{ parent() }}
+
+{% endblock %}
+
+<body>
+  <?php include_once 'fragments/navbar.php'  ?>
+
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Quiz</span></div>
+      <div class="info-list">
+          <div class="info">1. This test may take some time let's say <span>30 minutes</span></div>
+          <div class="info">2. Answer intuitively don't hesitate.</div>
+          <div class="info">3. When answering a question it shouldn't take you more than <span>10 seconds</span> .</div>
+          <div class="info">4. This test will reveal your true self and make you understand yourself more.</div>
+          <div class="info">5. Enjoy yourself.</div>
+      </div>
+      <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+          <button class="restart">Continue</button>
+      </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+      <header>
+          <div class="title">Awesome Quiz Application</div>
+          <div class="time_line"></div>
+      </header>
+      <section>
+          <div class="que_text">
+              <!-- Here I've inserted question from JavaScript -->
+          </div>
+          <div class="option_list">
+              <!-- Here I've inserted options from JavaScript -->
+          </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+          <div class="total_que">
+              <!-- Here I've inserted Question Count Number from JavaScript -->
+          </div>
+          <button class="next_btn">Next Que</button>
+      </footer>
+  </div>
+
+
+  <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+  <!-- <script src="js/questions.js"></script> -->
+
+  <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+  <!-- <script src="js/script.js"></script> -->
+
+</body>
+
+
+{% endblock %}
+
+    {% block javascripts %}
+
+        {{ parent() }}
+        <script src="{{ asset('js/test/script.js') }}"></script>
+
+    {% endblock %}
+

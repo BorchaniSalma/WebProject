@@ -1,0 +1,190 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HomePage{% endblock %}
+
+{% block Meta %}
+    {{ parent() }}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+{% endblock %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('css/references/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/references/stylesTitle.css') }}">
+{% endblock %}
+
+
+{% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+
+    <div class="container my_new_title">
+        <a href="http://www.thismanslife.co.uk" target="_blank">Books Referances</a>
+    </div>
+    <div class="wrapper">
+
+        <div class="coils">
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                        <div class="inner">
+                            <p>Diligord</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image:url(https://unsplash.it/511/511/);">
+                        <div class="inner">
+                            <p>Rocogged</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                        <div class="inner">
+                            <p>Strizzes</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+                        <div class="inner">
+                            <p>Clossyo</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/504/504/);">
+                        <div class="inner">
+                            <p>Rendann</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+                        <div class="inner">
+                            <p>Reflupper</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                        <div class="inner">
+                            <p>Acirassi</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-me" ontouchstart="this.classList.toggle('hover');">
+                <div class="container-me">
+                    <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                        <div class="inner">
+                            <p>Sohanidd</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Alias cum repellat velit quae suscipit c.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+
+{% endblock %}
+
+
+
+ {% block javascripts %}
+     {{ parent() }}
+     <script src="{{ asset('js/references/script.js') }}"></script>
+ {% endblock %}

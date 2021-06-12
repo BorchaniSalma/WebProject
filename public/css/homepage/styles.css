@@ -1,0 +1,110 @@
+
+
+/* General styles */
+body {
+  
+}
+
+/* header styles */
+#header {
+  background-image: url("https://borchanisalma.github.io/WebProject/ressources/images/Discover.jpg");
+  height: 100vh;
+}
+
+.header-content {
+  font-family: "Merriweather", serif;
+  color: #6fe69e;
+  font-size: calc(100% + 1vw + 1vh);
+  letter-spacing: 1px;
+  padding-top: 20rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.author-name {
+  position: relative;
+  padding-top: 1.5rem;
+  right: -25vw;
+  width: fit-content;
+}
+
+/* features section */
+.about {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: #1c1427;
+}
+.about .contentBx {
+  background-color: #1c1427;
+  padding: 100px;
+  width: 100%;
+}
+.heading {
+  color: #ccffbd;
+  font-size: calc(100% + 1vw + 1vh);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 5vh;
+}
+.text {
+  color: #ccffbd;
+  font-size: calc(15% + 1vw + 1vh);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.btn {
+  border-color: black;
+  background-color: #40394a;
+  color: white;
+}
+
+#features {
+  background-color: #40394a;
+  height: 100px;
+  position: relative;
+}
+
+/* Symbole styling */
+
+.enneargram{
+  margin-top: 10px;
+  position:relative;
+  left:15px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+@media(max-width:1123px){
+  .enneargram{
+
+      height: 75vh;
+
+  }
+}
+@media(max-width:800px){
+  .enneargram{
+
+      height: 60vh;
+
+  }
+}
+@media(max-width:590px){
+  .enneargram{
+
+      height: 50vh;
+
+  }
+}
+@media(max-width:430px){
+  .enneargram{
+
+      height: 40vh;
+
+  }
+}
