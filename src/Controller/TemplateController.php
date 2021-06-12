@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class TemplateController extends AbstractController
 {
     /**
-     * @Route("/template{id}",name="the template")
+     * @Route("/template",name="the template")
      */
-    public function index($id): Response
+    public function index(): Response
     {
         return $this->render('template/index.html.twig', [
             'controller_name' => 'TemplateController',
