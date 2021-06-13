@@ -40,6 +40,7 @@ class User
     private $createdAt;
 
     /**
+<<<<<<< HEAD
      * @ORM\ManyToMany(targetEntity=Comment::class, mappedBy="user")
      */
     private $comments;
@@ -48,69 +49,73 @@ class User
     {
         $this->comments = new ArrayCollection();
     }
+      /*
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $password;
 
-    public function getId(): ?int
+
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getName(): ?string
+    public function getName()
     {
         return $this->Name;
     }
 
-    public function setName(?string $Name): self
+    public function setName(string $Name)
     {
         $this->Name = $Name;
 
         return $this;
     }
 
-    public function getLastName(): ?string
+    public function getLastName()
     {
         return $this->LastName;
     }
 
-    public function setLastName(?string $LastName): self
+    public function setLastName(string $LastName)
     {
         $this->LastName = $LastName;
 
         return $this;
     }
 
-    public function getEmail(): ?string
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function setEmail(?string $email): self
+    public function setEmail(string $email)
     {
         $this->email = $email;
 
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeInterface
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
 
-    public function setCreatedAt(?\DateTimeInterface $createdAt): self
+    public function setCreatedAt(DateTimeInterface $createdAt)
     {
         $this->createdAt = $createdAt;
 
         return $this;
     }
-
     /**
      * @return Collection|Comment[]
      */
-    public function getComments(): Collection
+    public function getComments()
     {
         return $this->comments;
     }
 
-    public function addComment(Comment $comment): self
+    public function addComment(Comment $comment)
     {
         if (!$this->comments->contains($comment)) {
             $this->comments[] = $comment;
@@ -120,7 +125,7 @@ class User
         return $this;
     }
 
-    public function removeComment(Comment $comment): self
+    public function removeComment(Comment $comment)
     {
         if ($this->comments->removeElement($comment)) {
             $comment->removeUser($this);
@@ -132,8 +137,21 @@ class User
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId($id)
     {
         $this->id = $id;
     }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
 }

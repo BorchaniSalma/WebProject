@@ -44,41 +44,41 @@ class Comment
         $this->user = new ArrayCollection();
     }
 
-    public function getId(): ?int
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getAuthor(): ?string
+    public function getAuthor()
     {
         return $this->author;
     }
 
-    public function setAuthor(string $author): self
+    public function setAuthor(string $author)
     {
         $this->author = $author;
 
         return $this;
     }
 
-    public function getContent(): ?string
+    public function getContent()
     {
         return $this->content;
     }
 
-    public function setContent(string $content): self
+    public function setContent(string $content)
     {
         $this->content = $content;
 
         return $this;
     }
 
-    public function getCreatedAt(): ?\DateTimeInterface
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeInterface $createdAt): self
+    public function setCreatedAt(\DateTimeInterface $createdAt)
     {
         $this->createdAt = $createdAt;
 
@@ -88,12 +88,12 @@ class Comment
     /**
      * @return Collection|User[]
      */
-    public function getUser(): Collection
+    public function getUser()
     {
         return $this->user;
     }
 
-    public function addUser(User $user): self
+    public function addUser(User $user)
     {
         if (!$this->user->contains($user)) {
             $this->user[] = $user;
@@ -102,7 +102,7 @@ class Comment
         return $this;
     }
 
-    public function removeUser(User $user): self
+    public function removeUser(User $user)
     {
         $this->user->removeElement($user);
 
