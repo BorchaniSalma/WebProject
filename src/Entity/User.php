@@ -37,10 +37,10 @@ class User
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
+
     private $createdAt;
 
     /**
-<<<<<<< HEAD
      * @ORM\ManyToMany(targetEntity=Comment::class, mappedBy="user")
      */
     private $comments;
@@ -49,7 +49,7 @@ class User
     {
         $this->comments = new ArrayCollection();
     }
-      /*
+    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $password;
@@ -101,7 +101,7 @@ class User
         return $this->createdAt;
     }
 
-    public function setCreatedAt(DateTimeInterface $createdAt)
+    public function setCreatedAt($createdAt): User
     {
         $this->createdAt = $createdAt;
 
@@ -115,7 +115,7 @@ class User
         return $this->comments;
     }
 
-    public function addComment(Comment $comment)
+    public function addComment(Comment $comment): User
     {
         if (!$this->comments->contains($comment)) {
             $this->comments[] = $comment;
@@ -125,7 +125,7 @@ class User
         return $this;
     }
 
-    public function removeComment(Comment $comment)
+    public function removeComment(Comment $comment): User
     {
         if ($this->comments->removeElement($comment)) {
             $comment->removeUser($this);
