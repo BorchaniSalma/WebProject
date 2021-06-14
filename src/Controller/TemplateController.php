@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Comment;
+use App\Entity\User;
 use App\Form\CommentType;
 use Container5xIA5H7\getCommentRepositoryService;
 use DateTime;
@@ -19,23 +20,24 @@ class TemplateController extends AbstractController
     /**
      * @Route("/template",name="the template")
      */
-    public function index(Request $request, EntityManagerInterface $manager)
+    public function index (Request $request, EntityManagerInterface $manager)
 
-    {  $comment = new Comment();
+    {
+        $comment = new Comment();
         $form=$this->createForm(CommentType::class,$comment);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $comment->setCreatedAt(new DateTime());
             $manager->persist($comment);
             $manager->flush();
-            return $this->redirectToRoute('the template');
-
 
         }
+        $repository = $this->getDoctrine()->getRepository('App:Comment');
+        $comments= $repository->findAll();
         return $this->render('template/index.html.twig', [
             'controller_name' => 'TemplateController',
             'commentForm' => $form->createView(),
-            'Comment'=>$comment,
+            'Comments'=>$comments,
             ]);
     }
 }

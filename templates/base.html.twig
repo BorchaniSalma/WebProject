@@ -11,7 +11,7 @@
 
 
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}WhoAmI?{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
@@ -48,7 +48,7 @@
             {% block navbar %}
                 <nav class="navbar navbar-expand-lg" id="mother">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="Test.html"
+                        <a class="navbar-brand" href="{{ url('personality-test') }}"
                         >Who am I
                             <div class="interogation-mark">?</div></a
                         >
@@ -70,36 +70,19 @@
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="{{ url('homepage') }}">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
+                                {%  if name is defined %}
+                                        <li class="nav-item"><a class="nav-link active" href="#">{{ name }}</a></li>
+                                {% else %}
+                                        <li class="nav-item"><a class="nav-link" href="{{ url('creation') }}">Sign up</a></li>
+                                {% endif %}
+                                
 
-                                <li class="nav-item dropdown">
-                                    <a
-                                            class="nav-link dropdown-toggle"
-                                            href="#"
-                                            id="navbarDropdown"
-                                            role="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
-                                    >
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                
 
-                                        {%  if name is defined%}
-                                            <li><a class="dropdown-item" href="#">{{ name }}</a></li>
-                                        {% else %}
-                                            <li><a class="dropdown-item" href="{{ url('creation') }}">Sign up</a></li>
-                                        {% endif %}
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider" /></li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </li>
-                                    </ul>
+                                        
+                                
                                 </li>
                             </ul>
                         </div>

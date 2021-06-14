@@ -1,6 +1,6 @@
-let options = ["jamais", "parfois", "souvent", "Toujours"]
+var options = ["jamais", "parfois", "souvent", "Toujours"]
 
-let questions = [
+var questions = [
   {
     number: "1",
     question:

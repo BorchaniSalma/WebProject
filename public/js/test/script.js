@@ -107,16 +107,19 @@ function showResult(){
             persoFinal = key;
         }
     }
-
+    
     console.log(persoFinal);
-
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
     let scoreTag = '<span>Calculating the results ... </span>';
     scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+    document.cookie=persoFinal;
+    var url= "https://127.0.0.1:8000/template";
+    window.location = url;
     
+
 }
 
 
