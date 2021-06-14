@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '121bf34a99796aa20637d3c15e064c9eee24c83d',
+    'reference' => '37beb0cc3d73e3d1fb65656b0ee6989ad00b4b21',
     'name' => 'symfony/website-skeleton',
   ),
   'versions' => 
@@ -1317,7 +1317,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '121bf34a99796aa20637d3c15e064c9eee24c83d',
+      'reference' => '37beb0cc3d73e3d1fb65656b0ee6989ad00b4b21',
     ),
     'symfony/yaml' => 
     array (

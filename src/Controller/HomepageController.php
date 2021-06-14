@@ -6,11 +6,12 @@ use App\Entity\User;
 use App\Form\UserType;
 use Doctrine\ORM\EntityManagerInterface;
 /*use http\Env\Request;*/
-use phpDocumentor\Reflection\DocBlock\Tags\Uses;
+
+use phpDocumentor\Reflection\Types\This;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoder ;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  *  @Route("/Home",name="homepageMainRoute")
@@ -30,27 +31,25 @@ class HomepageController extends AbstractController
     /**
      * @Route("/sign up/",name="creation de compte")
      */
-    public function signUp(EntityManagerInterface $manager, Request $request,  $encoder){
-        $newUser=new User();
-        $form=$this->createForm(UserType::class,$newUser);
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()){
+    public function signUp(EntityManagerInterface $manager ,Request $request )
+    {
+    $user=new User();
+    $form=$this->createForm(UserType::class,$user);
+    $form->handleRequest($request);
+    if($form->isSubmitted()){
+        $user->setCreatedAt(new \DateTime());
+        $manager->persist($user);
+        $manager->flush();
 
-            $manager->persist($newUser);
-            $manager->flush();
-        }
-
-
-   /* if ($request->request->count()>0){
-        $newUser=new User();
-        $newUser->setName($request->request->get('Name'));
-
-    }*/
-        return $this->render('homepage/signUp.html.twig', [
-            'user'=>$newUser,
-            'form'=>$form->createView()
+        return $this->render('homepage/index.html.twig', [
+            'name'=>$user->getName()
 
         ]);
     }
 
+    return $this->render('homepage/signUp.html.twig' ,[
+    'form'=>$form->createView()
+
+        ]);
+    }
 }
