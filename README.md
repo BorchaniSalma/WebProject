@@ -17,6 +17,17 @@
     * [Symfony](https://symfony.com)
     * [Composer](https://getcomposer.org)
     * [Xampp](https://www.apachefriends.org/fr/index.html) this comes with the php and phpmyadmin (mariadb)
+- Steps :
+    * download symfony, composer, xampp or phpmyadmin directly
+    * open xampp and run apache and phpmyadmin
+    * set a database named project
+    * clone the project
+    * go to the project folder and enter this in the command line
+        ```
+        php bin/console doctrine:migrations:migrate 
+        symfony serve
+        ```
+    * you are now ready to go
 
 
 ### Here is a quick presentation of the site : 
