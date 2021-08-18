@@ -107,8 +107,9 @@ function showResult(){
             persoFinal = key;
         }
     }
-    
+
     console.log(persoFinal);
+
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
