@@ -6,7 +6,11 @@ const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const responses = [];
-var myPersoArray = {"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0}
+
+
+let myPersoArray = {"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0}
+
+
 // if startQuiz button clicked
 start_btn_script.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
@@ -22,13 +26,14 @@ continue_btn.onclick = ()=>{
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
 }
+
 let que_count = 0;
 let que_numb = 1;
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
-
+//this function return the response score
 function generateScore(response){
     switch (response){
         case '<span>jamais</span>':return 0;
@@ -40,7 +45,7 @@ function generateScore(response){
 // if Next Que button clicked
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ 
-        myPersoArray[questions[que_count].personality] += generateScore(responses[que_count]);
+        myPersoArray[questions[que_count].personality] += generateScore(responses[que_count]);//adding the user response to the personality array
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
         showQuetions(que_count); //calling showQestions function
@@ -52,20 +57,17 @@ next_btn.onclick = ()=>{
         showResult(); //calling showResult function
     }
 }
-
 // getting questions and options from array
 function showQuetions(index){
 
-    const que_text = document.querySelector(".que_text");
+    const que_text = document.querySelector(".que_text");//selecting the text holder for the question
     let option_tag = "";
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ questions[index].number + ". " + questions[index].question +'</span>';
-    console.log("this is the option tag: ");
-    console.log(options);
     let option_answer = "";
     for(option_answer in options){
         option_tag = option_tag + '<div class="option"><span>'+ options[option_answer] +'</span></div>'
-    }
+    }//iterating through the options and addint them to the option_tag
 
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
@@ -76,39 +78,29 @@ function showQuetions(index){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
-// creating the new div tags which for icons
-let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
-let crossIconTag = '<div class="icon cross"><i class="fas fa-check"></i></div>';
-
 //if user clicked on option
 function optionSelected(answer){
     const allOptions = option_list.children.length;
-    console.log("this is the question count : "+ que_count);
-    if(responses.length >= que_count){
+    if(responses.length >= que_count){//removing the selected font from the other selected answer
         for(let i=0; i < allOptions; i++){
             option_list.children[i].classList.remove("correct"); 
-            console.log("this is the class list of "+ option_list.children[i]);
-            console.log(option_list.children[i].classList);
         }    
     }
     responses[que_count] = answer.innerHTML;
-    console.log("these are the responses : ");
-    console.log(responses);
     answer.classList.add("correct");
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
-
+//this function calculate the result of the test based on the collected data in the personality array
 function showResult(){
     var max=0;
     var persoFinal=1;
-    for(var key in myPersoArray){
+    for(var key in myPersoArray){//just a little search algorithm
         if(myPersoArray[key] >= max){
             max = myPersoArray[key];
             persoFinal = key;
         }
     }
 
-    console.log(persoFinal);
 
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
@@ -116,14 +108,12 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     let scoreTag = '<span>Calculating the results ... </span>';
     scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
-    document.cookie=persoFinal;
-    var url= "http://127.0.0.1:8000/template";
-    window.location = url;
+    var url= "http://127.0.0.1:8000/template/"+(persoFinal-1);
+    window.location = url;//redirection to the personality
     
 
 }
-
-
+//this function updates the question counter every question
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';

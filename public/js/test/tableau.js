@@ -5,7 +5,7 @@ var questions = [
     number: "1",
     question:
       "Je passe pour une personne solide et suscite assez rapidement le respect quand je m’affirme en société",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "2",
@@ -107,7 +107,7 @@ var questions = [
     number: "18",
     question:
       "Au besoin, je reprends vite la main sur les décisions à prendre, quitte à imposer parfois mon point de vue, quels que soient les avis ou sensibilités exprimés.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "19",
@@ -155,7 +155,7 @@ var questions = [
     number: "26",
     question:
       "J’ai confiance en ma force et en mon courage, lorsqu’arrive le moment de prendre une décision, je ne fais pas de compromis.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "27",
@@ -167,7 +167,7 @@ var questions = [
     number: "28",
     question:
       "Je me positionne en négociateur(trice) assez ferme, car je sais imposer mes idées et reprendre le contrôle d’une situation pour en sortir gagnant.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "29",
@@ -269,7 +269,7 @@ var questions = [
     number: "45",
     question:
       " Je suis capable de déployer beaucoup d’énergie pour une personne de mon clan.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "46",
@@ -293,7 +293,7 @@ var questions = [
     number: "49",
     question:
       "Je suis exigent(e) vis à vis de mes attentes et m’affirme d’une manière simple et directe, quitte à bousculer mon entourage si nécessaire.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "50",
@@ -359,7 +359,7 @@ var questions = [
     number: "60",
     question:
       "Je suis capable d’utiliser la force pour obtenir ce que je veux, qui plus est quand il s’agit de me faire respecter.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "61",
@@ -383,7 +383,7 @@ var questions = [
     number: "64",
     question:
       "Mes principes de justice sont importants, ils me permettent de récupérer le contrôle d’une situation.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "65",
@@ -479,7 +479,7 @@ var questions = [
     number: "80",
     question:
       "J’ai une forte tendance à l’individualisme, j’éprouve un très fort besoin de faire passer sous contrôle tout ce qui ne l’est pas encore.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "81",
@@ -521,7 +521,7 @@ var questions = [
     number: "87",
     question:
       "M, MJe me sens solide et suffisamment « dur(e) à cuire » pour agir avec fermeté, notamment face à des situations d’injustices, subies par des personnes plus faibles que moi.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "88",
@@ -587,7 +587,7 @@ var questions = [
     number: "98",
     question:
       "Je sais dire non facilement, l’autorité ne m’impressionne pas le moins du monde.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "99",
@@ -605,7 +605,7 @@ var questions = [
     number: "101",
     question:
       "Dans mes interactions avec les autres, j’ai tendance à compter que sur moi quitte à passer parfois pour une personne brusque à la tête dure.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "102",
@@ -683,7 +683,7 @@ var questions = [
     number: "114",
     question:
       "Si quelqu’un n’a pas de valeur à mes yeux, il ne peut pas m’en donner.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "115",
@@ -749,7 +749,7 @@ var questions = [
     number: "125",
     question:
       "Le courage et la force sont des atouts que je mobilise facilement, quand il s’agit de reprendre la main sur des situations qui ne me conviennent pas.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "126",
@@ -767,7 +767,7 @@ var questions = [
     number: "128",
     question:
       " Je suis suffisamment solide pour prendre une décision malgré le désaccord de mes proches.",
-    personality: 7,
+    personality: 8,
   },
   {
     number: "129",

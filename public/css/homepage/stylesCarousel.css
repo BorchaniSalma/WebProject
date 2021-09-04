@@ -121,26 +121,13 @@ section .title::before{
 #testimonials{
   background-color: #40394a!important;
   height: 100vh;
-
 }
 #testimonials .teams .max-width .title{
   padding-top:50px!important;
   color:#ccffbd!important;
 }
-#testimonials .teams .max-width .my-carousel .my-card .my-box p{
-  color:#ffff;
-  transition:color 0.3s ease;
-}
-#testimonials .teams .my-carousel .my-card:hover p{
 
-  color:#1c1427;
-
-}
 #testimonials .teams .my-carousel .my-card:hover .text{
   transition:color 0.3s ease;
-}
-#testimonials .teams .my-carousel .my-card:hover .text{
-
   color:mediumseagreen;
-
 }

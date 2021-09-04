@@ -6,11 +6,14 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository", repositoryClass=UserRepository::class)
+ * @UniqueEntity(fields={"email"},message="This mail is used sorry ! ")
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -31,6 +34,7 @@ class User
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Email
      */
     private $email;
 
@@ -51,10 +55,34 @@ class User
     }
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Length(min="8", minMessage="Password Minimum 8 Characters Long")
+     * @Assert\EqualTo(propertyPath="confirm_password")
      */
     private $password;
+    /**
+     * @Assert\EqualTo(propertyPath="password")
+     */
+    public $confirm_password;
 
+    public function getUsername(){
+        return $this->getEmail();
+    }
+    public function eraseCredentials(){
+        
+    }
 
+    public function getSalt(){
+        
+    }
+    /**
+    * Returns the roles granted to the user.
+    * 
+    * @return Role[] The user roles
+    */
+    public function getRoles()
+{
+        return array('ROLE_USER');
+}
     public function getId()
     {
         return $this->id;

@@ -226,15 +226,29 @@
     </div>
 </section>
 
+{% if app.user %}
 
-
-<section style="padding-left : 25vw;padding-right: 25vw; height: 300px;padding-top:40px;">
-    {{ form_start(commentForm) }}
-    {{ form_row(commentForm.author,{'attr': {'placeholder': "Your Name" }})}}
-    {{ form_row(commentForm.content,{'attr':{'placeholder': "Your Feedback"}}) }}
-    <button type="submit" class="btn btn-success">Submit Feedback ! </button>
-    {{ form_end(commentForm) }}
-</section>
+    <section style="padding-left : 25vw;padding-right: 25vw; height: 300px;padding-top:40px;">
+        {{ form_start(commentForm) }}
+        {% set full = app.user.Name ~ " " ~ app.user.LastName %}
+        {{ form_row(commentForm.author,{'attr': {'placeholder': "Your Name", 'value':full }})}}
+        {{ form_row(commentForm.content,{'attr':{'placeholder': "Your Feedback"}}) }}
+        <button type="submit" class="btn btn-success">Submit Feedback ! </button>
+        {{ form_end(commentForm) }}
+    </section>
+{% else %}
+    <header>
+            <div class="container">
+                <h2>
+                    Your Feedback is Important to Us
+                </h2>
+                <p>
+                   Sign in to comment !
+                </p>
+                <a class="btn btn-primary" href="{{ path("login")}}">Sign in</a>
+            </div>
+        </header>
+{% endif %}
 <section id ="commentaires">
     <div class="card">
         <div class="card-body">
@@ -281,6 +295,9 @@
     <script src="{{ asset('js/template/main.js') }}"></script>
     <script src="{{ asset('js/template/util.js') }}"></script>
     <script src="{{ asset('js/template/templateGenerator.js') }}"></script>
+    <script>
+        showQuestions('{{ personality }}')
+    </script>
 {% endblock %}
 {% endblock %}
 

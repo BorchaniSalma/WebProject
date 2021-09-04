@@ -18,9 +18,9 @@ use Symfony\Component\HttpFoundation\Request;
 class TemplateController extends AbstractController
 {
     /**
-     * @Route("/template",name="the template")
+     * @Route("/template/{id}",name="the template")
      */
-    public function index (Request $request, EntityManagerInterface $manager)
+    public function index ($id,Request $request, EntityManagerInterface $manager)
 
     {
         $comment = new Comment();
@@ -36,6 +36,7 @@ class TemplateController extends AbstractController
         $comments= $repository->findAll();
         return $this->render('template/index.html.twig', [
             'controller_name' => 'TemplateController',
+            'personality' => $id,
             'commentForm' => $form->createView(),
             'Comments'=>$comments,
             ]);

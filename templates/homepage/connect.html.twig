@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Homepage{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="{{ asset('css/homepage/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/homepage/stylesCarousel.css') }}">
+<link rel="stylesheet" href="{{ asset('css/homepage/signUp/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/homepage/signUp/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+
+{% block navbar %}
+{{ parent() }}
+{% endblock %}
+
+<div class="formContent">
+    <form method="post" action="{{path("login")}}">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="_username"
+                aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="_password"
+                placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{{ path('creation') }}" class="btn btn-primary">Sign up</a>
+    </form>
+    
+</div>
+<!-- Header section  -->
+<section id="header">
+    <div class="header-content row">
+
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+
+{% block javascripts %}
+{{ parent() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{{ asset('js/carousel/script.js') }}"></script>
+{% endblock %}

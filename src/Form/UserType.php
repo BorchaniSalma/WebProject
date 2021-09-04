@@ -21,6 +21,7 @@ class UserType extends AbstractType
             ->add('LastName')
             ->add('email',EmailType::class)
             ->add('password',PasswordType::class)
+            ->add('confirm_password',PasswordType::class)
             ->add('valider',SubmitType::class ,[
                 'attr'=>['label'=>'valider ']
             ])

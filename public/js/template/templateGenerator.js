@@ -88,4 +88,3 @@ function showQuestions(index) {
     
 }
 
-showQuestions(document.cookie-1);

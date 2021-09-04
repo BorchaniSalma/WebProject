@@ -1,21 +1,31 @@
 security:
     encoders:
         App\Entity\User:
-            algorithm: bcrypt
+            algorithm: 'auto'
 
     # https://symfony.com/doc/current/security/experimental_authenticators.html
     enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         users_in_memory: { memory: null }
+        in_database:
+            entity:
+                class: App\Entity\User
+                property: email
     firewalls:
         dev:
+            
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             lazy: true
-            provider: users_in_memory
-
+            provider: in_database
+            form_login:
+                login_path: login
+                check_path: login
+            logout:
+                path: logout
+                target: homepage
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 
