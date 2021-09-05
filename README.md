@@ -10,7 +10,7 @@
 ### How is the website built ? :
 
 - This website il built with symfony framework on backend and vanilla javascript and some jquery on frontend.
-- This is just a trial version its not deployed yet so if you want to make it run just clone the github repository and install symfony and XAMPP or WAMPP to run it locally.
+- Here is the link to the deployed Site : http://who-am-i-deployment.herokuapp.com/ you can try it out if you want .
     If you want to just do the test you can checkout the [Test](https://mohamedsahnoun.github.io/Enneagram-Personality-Test/) in this link and take it 
 - It requires a specific database name "project" in phpmyadmin
 - Links : 
