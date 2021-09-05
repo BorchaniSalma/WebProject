@@ -108,7 +108,7 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     let scoreTag = '<span>Calculating the results ... </span>';
     scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
-    var url= "http://127.0.0.1:8000/template/"+(persoFinal-1);
+    var url= "http://who-am-i-deployment.herokuapp.com/template/"+(persoFinal-1);
     window.location = url;//redirection to the personality
     
 
